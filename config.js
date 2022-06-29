@@ -99,14 +99,14 @@ global.mess = {
     botAdmin: '¡CÓMO CARAJOS VOY HACER ESO, SI NO SOY ADMIN🤦🏻‍♂️!!!',
     owner: '⚕️¡Este comando solo puede usar mi jefe!⚕️',
     group: 'This feature is only for groups!',
-    private: 'This feature is only for private chats!',
-    bot: 'This feature is only for bot',
-    wait: 'In process...',
-    linkm: 'Where is the link?',
+    private: '¡Esta característica es solo para grupos!',
+    bot: '⚕️Esta función solopuedo usar yo putin⚕️',
+    wait: 'In proceso...',
+    linkm: '¿Donde esta el enlace?🤦🏻‍♂️',
     error: 'Error!',
-    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
-    banChat: 'The bot was banned in this group, please contact the owner to unban'
+    ban: 'BANEADO POR ROSQUETE, REGLAS 🕵🏻🥷🏻⚔️.',
+    nsfw: 'La función nsfw no esta activado pornerooo, comuníquese con el administrador si quieres?',
+    banChat: 'El bot fue apagado en este grupo, comuníquese con el propietario para desbanearowner to unban'
 }
 global.limitawal = {
     premium: "Infinity",
