@@ -1672,36 +1672,8 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
-break
-case 'me': case 'inventory': case 'profile':{
-  if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
-  if (!isInventory){ addInventori(m.sender) }
-  if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
-     
-     var flob = await getBuffer(picak+'User Profile')
-     let teksehmazeh = `*── 「 BIO PROFILE 」 ──*\n\n`
-     teksehmazeh += `*❤️Your Blood* : ${getDarah(m.sender)}\n`
-     teksehmazeh += `*◻️️Your Iron* : ${getBesi(m.sender)}\n`
-     teksehmazeh += `*🌟Your Gold* : ${getEmas(m.sender)}\n`
-     teksehmazeh += `*💎Your Emerald* : ${getEmerald(m.sender)}\n`
-     teksehmazeh += `*🧪Your Potion* : ${getPotion(m.sender)}\n\n`
-     teksehmazeh += `*── 「 HUNT RESULT 🏹 」 ──*\n`
-     teksehmazeh += `*🐟Fish* : ${getIkan(m.sender)}\n`
-     teksehmazeh += `*🐔Chicken* : ${getAyam(m.sender)}\n`
-     teksehmazeh += `*🐇Rabbit* : ${getKelinci(m.sender)}\n`
-     teksehmazeh += `*🐑Sheep* : ${getDomba(m.sender)}\n`
-     teksehmazeh += `*🐄Cow* : ${getSapi(m.sender)}\n`
-     teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
-     teksehmazeh += `_*${pushname}*_`
-     let butRun = [
-        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
-        	{ urlButton: { displayText: `Script 🍜`, url : `${botscript}` } },
-            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'}},
-            { quickReplyButton: { displayText: `Leaderboard 🎢`, id: 'leaderboard'} }
-        	]
-        	XeonBotInc.sendMessage(m.chat, { caption: teksehmazeh, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `Want to adventure again?`, templateButtons: butRun, footer: `${botname}`, mentions: [m.sender] })
-        	}
-        	break
+
+		break
  case 'banchat': {
  if (isBan) return reply(mess.ban)	 			
 if (!isCreator) return replay(mess.owner)
