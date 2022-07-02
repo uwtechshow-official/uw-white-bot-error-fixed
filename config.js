@@ -101,7 +101,7 @@ global.mess = {
     group: '¡Esta característica es solo para grupos!',
     private: '¡Esta función es solo para chats privados!',
     bot: '❌ Solo yo puedo usar esta función',
-    wait: 'In procesO...',
+    wait: 'En proceso...',
     linkm: 'Where is the link?',
     error: '¡Error! Tal vez la clave Api haya expirado🤔!',
     ban: 'Has sido baneado por el BOT, si quieres que no te baneen, chatea con el dueño',
