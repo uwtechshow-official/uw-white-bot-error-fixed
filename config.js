@@ -58,9 +58,9 @@ global.reactmoji = "🚀"
 global.ownertag = ['17743750552'] //ur owner tag
 global.ownernummenu = ['51931263982'] //ur owner number in menu and all
 global.watermark = "©Ⓥⓘⓖⓖⓞ🥷🏻." //ur watermark
-global.botscript = "https://www.youtube.com"
-global.linkz1 = "https://chat.whatsapp.com"
-global.linkz2 = "https://chat.whatsapp.com"
+global.botscript = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
+global.linkz1 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
+global.linkz2 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
