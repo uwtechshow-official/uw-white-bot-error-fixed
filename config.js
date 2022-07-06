@@ -49,7 +49,7 @@ global.location = "República de AQP" //ur location
 
 //bot bombdy
 global.botname = "ROCKET🚀" //ur bot name
-global.websitex = "https://www.youtube.com" //ur website
+global.websitex = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
 global.packname = "ROCKET🚀.\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo.VIGGO😎😈 "
 global.author = "VIGGO😎😈"
