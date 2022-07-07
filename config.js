@@ -45,16 +45,16 @@ global.owner = ['17743750552'] //ur owner number
 global.ownername = "VERDUGO-V7"
 global.ytname = "YT: VERDUGO-V7" //ur yt chanel name
 global.socialm = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur github or insta name
-global.location = "República de AQP" //ur location
+global.location = "Sri-Lanka" //ur location
 
 //bot bombdy
-global.botname = "VERDUGO😎" //ur bot name
+global.botname = "VERDUGO-V7" //ur bot name
 global.websitex = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "ROCKET😎.\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está...VERDUGO😎😈"
-global.author = "VERDUGO😎😈"
-global.themeemoji = "😎"
-global.reactmoji = "😎"
+global.packname = "VERDUGO😈.\n\n\n\n\n\n\nSi con mis letras te seduzco, imagínate con mis caricias.VERDUGO😈"
+global.author = "VERDUGO😈"
+global.themeemoji = "😈"
+global.reactmoji = "😈"
 global.ownertag = ['17743750552'] //ur owner tag
 global.ownernummenu = ['17743750552'] //ur owner number in menu and all
 global.watermark = "©VERDUGO-V7" //ur watermark
