@@ -1542,9 +1542,9 @@ const jumlahUser = pendaftar.length
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
   
 const menulist = `┌─❖
-│「 Hola 👋🏻 」
+│「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Como estas? 😄
+┌┤✑  How Are You? 😄
 │└────────────┈ ⳹
 │
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
@@ -1558,6 +1558,18 @@ const menulist = `┌─❖
 │𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│
+└─「 𝙐𝙎𝙀𝙍'𝙎 𝙇𝙀𝙑𝙀𝙇𝙄𝙉𝙂 」
+│𝗬𝗼𝘂𝗿 𝗟𝗲𝘃𝗲𝗹𝗶𝗻𝗴 : ${levelMenu}
+│𝗬𝗼𝘂𝗿 𝗫𝗽 : ${xpMenu}\ ${reqXp}
+│𝗬𝗼𝘂𝗿 𝗥𝗼𝗹𝗲 : ${role}
+│𝗬𝗼𝘂𝗿 𝗠𝗼𝗻𝗲𝘆 : $${uangku}
+│
+└─「 𝙐𝙎𝙀𝙍'𝙎 𝘼𝘿𝙑𝙀𝙉𝙏𝙐𝙍𝙀 」
+│𝗬𝗼𝘂𝗿 𝗜𝗿𝗼𝗻 : ${getBesi(m.sender)}
+│𝗬𝗼𝘂𝗿 𝗚𝗼𝗹𝗱 : ${getEmas(m.sender)}
+│𝗬𝗼𝘂𝗿 𝗘𝗺𝗲𝗿𝗮𝗹𝗱 : ${getEmerald(m.sender)}
+│𝗬𝗼𝘂𝗿 𝗣𝗼𝘁𝗶𝗼𝗻 : ${getPotion(m.sender)}
 └┬────────────┈ ⳹
    │✑  Please Select
    │✑  The Button Below
@@ -1598,7 +1610,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 🌐',
+                                    displayText: 'All Menu 🍱',
                                     id: 'allmenu'
                                 }
                             }, {
@@ -1625,7 +1637,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                         let buttonmenu = [
         	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🌐`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
@@ -1641,7 +1653,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 let buttonmenu = [
         	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
-            { quickReplyButton: { displayText: `All Menu 🌐`, id: 'allmenu'} },
+            { quickReplyButton: { displayText: `All Menu 🍱`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `List Menu 🍢`, id: 'command'} },
             { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'} }
         	]
@@ -1652,7 +1664,7 @@ case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case '
 if (isBanChat) return reply(mess.banChat)
 teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🌐'}, type: 1}
+{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
 ]
 let buttonMessage = {
 image: thum,
@@ -1672,8 +1684,36 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
-
-		break
+break
+case 'me': case 'inventory': case 'profile':{
+  if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
+  if (!isInventory){ addInventori(m.sender) }
+  if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
+     
+     var flob = await getBuffer(picak+'User Profile')
+     let teksehmazeh = `*── 「 BIO PROFILE 」 ──*\n\n`
+     teksehmazeh += `*❤️Your Blood* : ${getDarah(m.sender)}\n`
+     teksehmazeh += `*◻️️Your Iron* : ${getBesi(m.sender)}\n`
+     teksehmazeh += `*🌟Your Gold* : ${getEmas(m.sender)}\n`
+     teksehmazeh += `*💎Your Emerald* : ${getEmerald(m.sender)}\n`
+     teksehmazeh += `*🧪Your Potion* : ${getPotion(m.sender)}\n\n`
+     teksehmazeh += `*── 「 HUNT RESULT 🏹 」 ──*\n`
+     teksehmazeh += `*🐟Fish* : ${getIkan(m.sender)}\n`
+     teksehmazeh += `*🐔Chicken* : ${getAyam(m.sender)}\n`
+     teksehmazeh += `*🐇Rabbit* : ${getKelinci(m.sender)}\n`
+     teksehmazeh += `*🐑Sheep* : ${getDomba(m.sender)}\n`
+     teksehmazeh += `*🐄Cow* : ${getSapi(m.sender)}\n`
+     teksehmazeh += `*🐘Elephant* : ${getGajah(m.sender)}\n\n`
+     teksehmazeh += `_*${pushname}*_`
+     let butRun = [
+        	{ urlButton: { displayText: `YouTube 🍒`, url : `${websitex}` } },
+        	{ urlButton: { displayText: `Script 🍜`, url : `${botscript}` } },
+            { quickReplyButton: { displayText: `Owner 🤣`, id: 'owner'}},
+            { quickReplyButton: { displayText: `Leaderboard 🎢`, id: 'leaderboard'} }
+        	]
+        	XeonBotInc.sendMessage(m.chat, { caption: teksehmazeh, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `Want to adventure again?`, templateButtons: butRun, footer: `${botname}`, mentions: [m.sender] })
+        	}
+        	break
  case 'banchat': {
  if (isBan) return reply(mess.ban)	 			
 if (!isCreator) return replay(mess.owner)
@@ -1687,7 +1727,7 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nEl bot ha sido deshabilitado en este grupo, ahora nadie podrá usar el bot en este grupo!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nThe bot has been disabled in this group, now no one will able to use the bot in this group!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!isBanChat) return replay('Already Unbanned')
 let off = banchat.indexOf(from)
@@ -4942,7 +4982,7 @@ case 'tag': case 'tagall': {
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isAdmins && !isCreator) return replay(mess.admin)
-let teks = `╚»˙·٠•●📍 INVOCANDO 📍●•٠·˙«╝
+let teks = `╚»˙·٠•●🔰 INVOCANDO 🔰●•٠·˙«╝
  
  🌐 *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
 for (let mem of participants) {
@@ -9390,7 +9430,7 @@ case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 var unicorn = await getBuffer(picak+'All Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 🌐OWNER 」	
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
 ╠ ${prefix}self
 ╠ ${prefix}public
 ╠ ${prefix}antitag
@@ -9410,7 +9450,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 🌐OWNER 」
 ╠ ${prefix}block [tag/number]
 ╠ ${prefix}unblock [tag/number]
 ╠ ${prefix}coowner [add/del]
-╠═══════✪「 🌐GROUP 」	        
+╠═══════✪「 GROUP 」	        
 ╠${prefix}grousetting
 ╠${prefix}grouplink
 ╠${prefix}ephemeral [option]
@@ -9433,7 +9473,6 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 🌐OWNER 」
 ╠${prefix}antilinkfb [on/off]
 ╠${prefix}antilinktwit [on/off]
 ╠${prefix}antilinkall [on/off]
-╠${prefix}antivirus [on/off]
 ╠${prefix}antitoxic [on/off]
 ╠${prefix}antiwame [on/off]
 ╠${prefix}autorevoke [on/off]
@@ -9714,6 +9753,31 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 🌐OWNER 」
 ╠${prefix}neko
 ╠${prefix}gura
 ╠═══════✪「 NSFW 」
+╠${prefix}hentaivideo
+╠${prefix}yuri
+╠${prefix}masturbation
+╠${prefix}thighs
+╠${prefix}pussy
+╠${prefix}panties
+╠${prefix}orgy
+╠${prefix}ahegao
+╠${prefix}ass
+╠${prefix}bdsm
+╠${prefix}blowjob
+╠${prefix}cuckold
+╠${prefix}ero
+╠${prefix}gasm
+╠${prefix}cum
+╠${prefix}femdom
+╠${prefix}foot
+╠${prefix}gangbang
+╠${prefix}glasses
+╠${prefix}jahy
+╠${prefix}trap
+╠${prefix}blowjobgif
+╠${prefix}spank
+╠${prefix}hneko
+╠${prefix}nwaifu
 ╠═══════✪「 FUN 」
 ╠ ${prefix}how [text
 ╠ ${prefix}when [text]
@@ -9781,7 +9845,9 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 🌐OWNER 」
 ╠ ${prefix}playgirl
 ╠══════✪「 SOUND 」
 ╠ ${prefix}sound1
-╠ ${prefix}sound17
+╠ ${prefix}sound2
+╠ ${prefix}sound3
+╠ ${prefix}sound160
 ╠ ${prefix}sound161
 ╠══════✪「 GAME 」
 ╠ ${prefix}truth
