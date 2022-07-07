@@ -41,23 +41,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['51931263982'] //ur owner number
-global.ownername = "Viggo Tarasov"
-global.ytname = "YT: viggotarasov" //ur yt chanel name
-global.socialm = "Insta:Viggotarasov" //ur github or insta name
+global.owner = ['17743750552'] //ur owner number
+global.ownername = "VERDUGO-V7"
+global.ytname = "YT: VERDUGO-V7" //ur yt chanel name
+global.socialm = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur github or insta name
 global.location = "República de AQP" //ur location
 
 //bot bombdy
-global.botname = "ROCKET🚀" //ur bot name
+global.botname = "VERDUGO😎" //ur bot name
 global.websitex = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "ROCKET🚀.\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está del otro lado del miedo.VIGGO😎😈 "
-global.author = "VIGGO😎😈"
-global.themeemoji = "🚀"
-global.reactmoji = "🚀"
+global.packname = "ROCKET😎.\n\n\n\n\n\n\nTodo lo que alguna vez deseaste está...VERDUGO😎😈"
+global.author = "VERDUGO😎😈"
+global.themeemoji = "😎"
+global.reactmoji = "😎"
 global.ownertag = ['17743750552'] //ur owner tag
-global.ownernummenu = ['51931263982'] //ur owner number in menu and all
-global.watermark = "©Ⓥⓘⓖⓖⓞ🥷🏻." //ur watermark
+global.ownernummenu = ['17743750552'] //ur owner number in menu and all
+global.watermark = "©VERDUGO-V7" //ur watermark
 global.botscript = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
 global.linkz1 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
 global.linkz2 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
