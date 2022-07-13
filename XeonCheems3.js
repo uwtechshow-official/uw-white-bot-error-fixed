@@ -1671,8 +1671,7 @@ sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
-		
-*/break
+break
 case 'me': case 'inventory': case 'profile':{
   if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
   if (!isInventory){ addInventori(m.sender) }
@@ -1700,9 +1699,8 @@ case 'me': case 'inventory': case 'profile':{
             { quickReplyButton: { displayText: `Leaderboard 🎢`, id: 'leaderboard'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: teksehmazeh, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `Want to adventure again?`, templateButtons: butRun, footer: `${botname}`, mentions: [m.sender] })
-        	}*/ 
-		
-        	break
+        	}
+		break
  case 'banchat': {
  if (isBan) return reply(mess.ban)	 			
 if (!isCreator) return replay(mess.owner)
