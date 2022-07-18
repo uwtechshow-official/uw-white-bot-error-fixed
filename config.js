@@ -41,26 +41,26 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['761192103'] //ur owner number
-global.ownername = "Udavin Wijesundara"
-global.ytname = "YT: UW TECH SHOW" //ur yt chanel name
-global.socialm = "Insta: udavin_wijesundara" //ur github or insta name
+global.owner = ['17743750552'] //ur owner number
+global.ownername = "VERDUGO-V7"
+global.ytname = "YT: VERDUGO-V7" //ur yt chanel name
+global.socialm = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur github or insta name
 global.location = "Sri-Lanka" //ur location
 
 //bot bombdy
-global.botname = "White King WhatsApp Bot" //ur bot name
-global.websitex = "https://www.youtube.com/channel/UC8CNAgNIXy1O2vLBBSN7tcA" //ur website
+global.botname = "VERDUGO-V7" //ur bot name
+global.websitex = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4" //ur website
 global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n🦄🦄🦄 "
-global.author = "Udavin Wijesundara"
-global.themeemoji = "🐶"
-global.reactmoji = "😘"
-global.ownertag = ['761192103'] //ur owner tag
-global.ownernummenu = ['761192103'] //ur owner number in menu and all
-global.watermark = "White King WhatsApp Bot." //ur watermark
-global.botscript = "https://www.youtube.com/watch?v=vXBO1zJbGJ4"
-global.linkz1 = "https://chat.whatsapp.com/Ivsw8fEw5lW0n0qKEDHfUX"
-global.linkz2 = "https://chat.whatsapp.com/Jub3moTE7jaBERo8DqWXC1"
+global.packname = "VERDUGO😈.\n\n\n\n\n\n\nSi con mis letras te seduzco, imagínate con mis caricias"
+global.author = "VERDUGO😈"
+global.themeemoji = "😈"
+global.reactmoji = "😈"
+global.ownertag = ['15064979273'] //ur owner tag
+global.ownernummenu = ['15064979273'] //ur owner number in menu and all
+global.watermark = "©VERDUGO-V7" //ur watermark
+global.botscript = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
+global.linkz1 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
+global.linkz2 = "https://chat.whatsapp.com/EXHZ7eLsuImFKYdu3wrUZ4"
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -94,19 +94,19 @@ global.sessionName = "session"
 global.antitags = true
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.mess = {
-    success: 'Done✓',
-    admin: 'This feature is only for admins!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This feature is only for owner',
-    group: 'This feature is only for groups!',
-    private: 'This feature is only for private chats!',
-    bot: 'This feature is only for bot',
-    wait: 'In process...',
+    success: 'Echo✓',
+    admin: '❌ SILENCIO MIEMBRO COMÚN NO TIENE MORAL PARA USAR ESTE COMANDO ❌',
+    botAdmin: '¡CÓMO CARAJOS VOY HACER ESO, SI NO SOY ADMIN🤦🏻‍♂️!!!',
+    owner: '❌ ¡Este comando solo puede usar mi jefe! ❌',
+    group: '¡Esta característica es solo para grupos!',
+    private: '¡Esta función es solo para chats privados!',
+    bot: '❌ Solo yo puedo usar esta función',
+    wait: 'En proceso...',
     linkm: 'Where is the link?',
-    error: 'Error!',
-    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
-    banChat: 'The bot was banned in this group, please contact the owner to unban'
+    error: '¡Error!!!',
+    ban: 'Has sido baneado por el BOT, si quieres que no te baneen, chatea con el dueño',
+    nsfw: 'La función nsfw no se ha activado PAJERO‼️, comuníquese con el administrador para activarla',
+    banChat: 'El bot fue apagado en este grupo, comuníquese con el propietario para reiniciar'
 }
 global.limitawal = {
     premium: "Infinity",
