@@ -170,37 +170,11 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-  break
-        case 'antilinkfacebook': case 'antilinkfb': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!isBotAdmins) return replay(mess.botAdmin)
-if (!isAdmins && !isCreator) return replay(mess.admin)
-if (args[0] === "on") {
-if (AntiLinkFacebook) return replay('Already activated')
-ntilinkfb.push(from)
-replay('Success in turning on facebook antilink in this group')
-var groupe = await XeonBotInc.groupMetadata(from)
-var members = groupe['participants']
-var mems = []
-members.map(async adm => {
-mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
-})
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the facebook link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!AntiLinkFacebook) return replay('Already deactivated')
-let off = ntilinkfb.indexOf(from)
-ntilinkfb.splice(off, 1)
-replay('Success in turning off facebook antilink in this group')
-} else {
-  let buttonsntilink = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
-  ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
-  }
-  }		
+  let buttons = [
+{buttonId: `wkwwk`, buttonText: {displayText: `
+	  XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\ndon't send the facebook link kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m}) } else if (args[0] === "off") { if (!AntiLinkFacebook) return replay('Already deactivated') let off = ntilinkfb.indexOf(from) ntilinkfb.splice(off, 1) replay('Success in turning off facebook antilink in this group') }
+		    ]
+			
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, type: 1}
 ]
@@ -245,37 +219,10 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-  break
-        case 'antilinkfacebook': case 'antilinkfb': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!isBotAdmins) return replay(mess.botAdmin)
-if (!isAdmins && !isCreator) return replay(mess.admin)
-if (args[0] === "on") {
-if (AntiLinkFacebook) return replay('Already activated')
-ntilinkfb.push(from)
-replay('Success in turning on facebook antilink in this group')
-var groupe = await XeonBotInc.groupMetadata(from)
-var members = groupe['participants']
-var mems = []
-members.map(async adm => {
-mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
-})
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the facebook link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!AntiLinkFacebook) return replay('Already deactivated')
-let off = ntilinkfb.indexOf(from)
-ntilinkfb.splice(off, 1)
-replay('Success in turning off facebook antilink in this group')
-} else {
-  let buttonsntilink = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
-  ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
-  }
-  }		    
+   let buttons = [
+{buttonId: `wkwwk`, buttonText: {displayText: `
+	  XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\ndon't send the facebook link kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m}) } else if (args[0] === "off") { if (!AntiLinkFacebook) return replay('Already deactivated') let off = ntilinkfb.indexOf(from) ntilinkfb.splice(off, 1) replay('Success in turning off facebook antilink in this group') }
+		    ]
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'}, type: 1}
 ]
