@@ -170,33 +170,39 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!! 
-                                 break
- case 'banchat': {
- if (isBan) return reply(mess.ban)	 			
-if (!isCreator) return replay(mess.owner)
+  break
+        case 'antilinkfacebook': case 'antilinkfb': {
+   if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!m.isGroup) return replay(mess.group)
+if (!isBotAdmins) return replay(mess.botAdmin)
+if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (isBanChat) return replay('Already Banned')
-banchat.push(from)
-replay('Success in banning the gc')
+if (AntiLinkFacebook) return replay('Already activated')
+ntilinkfb.push(from)
+replay('Success in turning on facebook antilink in this group')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nThe bot has been disabled in this group, now no one will able to use the bot in this group!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the facebook link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Already Unbanned')
-let off = banchat.indexOf(from)
-banchat.splice(off, 1)
-replay('Success in unbanning the gc')
+if (!AntiLinkFacebook) return replay('Already deactivated')
+let off = ntilinkfb.indexOf(from)
+ntilinkfb.splice(off, 1)
+replay('Success in turning off facebook antilink in this group')
 } else {
-  let buttonsntnsfw = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
-  ] '}, type: 1}
+  let buttonsntilink = [
+  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
+  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
+  ]
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  }
+  }		
+let buttons = [
+{buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -239,33 +245,39 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘    
-                                  break
- case 'banchat': {
- if (isBan) return reply(mess.ban)	 			
-if (!isCreator) return replay(mess.owner)
+  break
+        case 'antilinkfacebook': case 'antilinkfb': {
+   if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!m.isGroup) return replay(mess.group)
+if (!isBotAdmins) return replay(mess.botAdmin)
+if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (isBanChat) return replay('Already Banned')
-banchat.push(from)
-replay('Success in banning the gc')
+if (AntiLinkFacebook) return replay('Already activated')
+ntilinkfb.push(from)
+replay('Success in turning on facebook antilink in this group')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nThe bot has been disabled in this group, now no one will able to use the bot in this group!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the facebook link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!isBanChat) return replay('Already Unbanned')
-let off = banchat.indexOf(from)
-banchat.splice(off, 1)
-replay('Success in unbanning the gc')
+if (!AntiLinkFacebook) return replay('Already deactivated')
+let off = ntilinkfb.indexOf(from)
+ntilinkfb.splice(off, 1)
+replay('Success in turning off facebook antilink in this group')
 } else {
-  let buttonsntnsfw = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'Ban' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Unban' }, type: 1 }
-  ]🏻'}, type: 1}
+  let buttonsntilink = [
+  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
+  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
+  ]
+  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
+  }
+  }		    
+let buttons = [
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
