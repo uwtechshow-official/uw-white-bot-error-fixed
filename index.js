@@ -170,11 +170,8 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-    let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, mentionedJid : mems, type: 1}
-		    ]			
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, mentionedJid : mems, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -217,11 +214,8 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-    let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, mentionedJid : mems, type: 1}
-		    ]	
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'}, type: 1}
+ let buttons = [
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'},mentionedJid : mems, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
