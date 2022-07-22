@@ -171,7 +171,7 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
     let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, contextInfo: { mentionedJid : mems }, {quoted:m}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, mentionedJid : mems }, {quoted:m}, type: 1}
 		    ]			
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, type: 1}
@@ -218,7 +218,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
    let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, contextInfo: { mentionedJid : mems }, {quoted:m}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'reglas he!!!'}, mentionedJid : mems }, {quoted:m}, type: 1}
 		    ]
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'}, type: 1}
