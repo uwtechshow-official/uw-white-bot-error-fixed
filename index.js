@@ -170,11 +170,9 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-  let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: `
-	  XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\ndon't send the facebook link kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m}) } else if (args[0] === "off") { if (!AntiLinkFacebook) return replay('Already deactivated') let off = ntilinkfb.indexOf(from) ntilinkfb.splice(off, 1) replay('Success in turning off facebook antilink in this group') }
-		    ]
-			
+   let buttons = [
+{buttonId: `wkwwk`, buttonText: {displayText: ´mentionedJid : contextInfo: { mentionedJid : mems }}, {quoted:m}´ }
+		    ]			
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Bienvenido al grupo, no te olvides de leer las reglas he!!!'}, type: 1}
 ]
@@ -220,8 +218,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
    let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: `
-	  XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\ndon't send the facebook link kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m}) } else if (args[0] === "off") { if (!AntiLinkFacebook) return replay('Already deactivated') let off = ntilinkfb.indexOf(from) ntilinkfb.splice(off, 1) replay('Success in turning off facebook antilink in this group') }
+{buttonId: `wkwwk`, buttonText: {displayText: ´mentionedJid : contextInfo: { mentionedJid : mems }}, {quoted:m}´ }
 		    ]
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Estaremos mejor sin tí🤘🏻'}, type: 1}
