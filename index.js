@@ -166,11 +166,7 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    │✑ ${xmembers}th
    │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
    │✑ ${xtime} ${xdate}
-   XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you!!!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!AntiLinkYoutubeChannel) return replay('Already deactivated')
-let off = ntilinkytch.indexOf(from)
-ntilinkytch.splice(off, 1)
+       ${text} 「 ⚠️Warning⚠️ 」  contextInfo: { mentionedJid : mems }}, {quoted:m})
    └───────────────┈ ⳹`
    //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
@@ -215,14 +211,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✑ ${xeonmembers}th
    │✑  𝗧𝗶𝗺𝗲 : 
    │✑  ${xeontime} ${xeondate}
-  
-   │XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you!!!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
-if (!AntiLinkYoutubeChannel) return replay('Already deactivated')
-let off = ntilinkytch.indexOf(from)
-ntilinkytch.splice(off, 1)
-   │
-   │
+   │${text} 「 ⚠️Warning⚠️ 」  contextInfo: { mentionedJid : mems }}, {quoted:m})
    └───────────────┈ ⳹` 
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
